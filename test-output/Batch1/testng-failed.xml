@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Batch1]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test(failed)">
+    <classes>
+      <class name="crossbrowser.User_TC">
+        <methods>
+          <include name="wishListToAddToCart"/>
+          <include name="userLogout"/>
+          <include name="openTheBrowser"/>
+          <include name="closeTheBrowser"/>
+          <include name="wishList"/>
+          <include name="checkOut"/>
+          <include name="closeDbConnection"/>
+          <include name="userLogin"/>
+        </methods>
+      </class> <!-- crossbrowser.User_TC -->
+      <class name="crossbrowser.User_TC2">
+        <methods>
+          <include name="userLogout"/>
+          <include name="openTheBrowser"/>
+          <include name="closeTheBrowser"/>
+          <include name="product"/>
+          <include name="searchProduct"/>
+          <include name="updateShipBillAddress"/>
+          <include name="closeDbConnection"/>
+          <include name="payment"/>
+          <include name="userLogin"/>
+        </methods>
+      </class> <!-- crossbrowser.User_TC2 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Batch1] -->
